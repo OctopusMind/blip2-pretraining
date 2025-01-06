@@ -25,9 +25,9 @@ test和train 是测试和训练实现
 output/model 保存训练好的模型
 
 # 训练修改config.py 文件
-visual_encoder_model_path: str = "eva_vit_g.pth" 下载地址：https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth
-qformer_model_path: str = "blip2_pretrained.pth"  下载地址：https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth
-bert_base_uncased_path: str = "bert-base-uncased"  下载地址：https://huggingface.co/google-bert/bert-base-uncased
+visual_encoder_model_path: str = "eva_vit_g.pth" 下载地址：https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth \\
+qformer_model_path: str = "blip2_pretrained.pth"  下载地址：https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth \\
+bert_base_uncased_path: str = "bert-base-uncased"  下载地址：https://huggingface.co/google-bert/bert-base-uncased \\
 把以上三个模型地址改成你下载的地址
 
 
