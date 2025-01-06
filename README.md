@@ -10,24 +10,28 @@
 </h4>
 
 
-blip2 预训练过程
-# 项目描述
- 此代码只是为了学习blip2预训练原理，最好debug看
- 对于loss的具体解释可以看https://zhuanlan.zhihu.com/p/16034558568
+blip2 预训练代码实现，里面参考了https://github.com/salesforce/LAVIS/tree/ac8fc98c93c02e2dfb727e24a361c4c309c8dbbc， 此代码只是为了学习blip2预训练原理，最好debug看
+ 
+对于loss的具体解释可以看https://zhuanlan.zhihu.com/p/16034558568
 
 # 代码组织解释
 训练数据
 data/images(图片) 和data/train_data.json(图片对应的解释)
+
 model 文件夹是blip2的算法实现。此代码参考了https://github.com/salesforce/LAVIS/tree/ac8fc98c93c02e2dfb727e24a361c4c309c8dbbc
+
 config.py配置文件，训练和test需要改动
+
 load_data.py 加载训练数据
+
 test和train 是测试和训练实现
+
 output/model 保存训练好的模型
 
 # 训练修改config.py 文件
-visual_encoder_model_path: str = "eva_vit_g.pth" 下载地址：https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth \\
-qformer_model_path: str = "blip2_pretrained.pth"  下载地址：https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth \\
-bert_base_uncased_path: str = "bert-base-uncased"  下载地址：https://huggingface.co/google-bert/bert-base-uncased \\
+visual_encoder_model_path: str = "eva_vit_g.pth" <br> 下载地址：https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/eva_vit_g.pth <br>
+qformer_model_path: str = "blip2_pretrained.pth"   <br>下载地址：https://storage.googleapis.com/sfr-vision-language-research/LAVIS/models/BLIP2/blip2_pretrained.pth <br>
+bert_base_uncased_path: str = "bert-base-uncased"  <br> 下载地址：https://huggingface.co/google-bert/bert-base-uncased <br>
 把以上三个模型地址改成你下载的地址
 
 
